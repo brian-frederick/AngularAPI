@@ -1,0 +1,40 @@
+<!doctype html>
+
+<head>
+    <link href="Content/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" type="text/css" rel="stylesheet" />
+</head>
+
+<html ng-app="myApp">
+<body class="container" ng-controller="myController as controller">
+    <header>
+        <h1>
+            Welcome to Gem Dandy's!
+        </h1>
+    </header>
+    <div class="row">
+        <div class="col-sm-4" style="min-height: 625px;" ng-repeat="product in model | orderBy:'+price'">
+            <h1 class="bg-success"> {{product.Name}}</h1>
+            <p style="min-height: 3em;">{{product.Description}}</p>
+            <img ng-src="{{product.Image}}" style="min-height:265px;" />
+            <br />
+
+            <button style="margin:10px;" class="btn btn-primary btn-lg btn-block" ng-show="product.CanPurchase">
+                {{product.Price | currency}}
+            </button>
+
+            <product-panels></product-panels>
+
+        </div>
+    </div>
+
+    <script src="Scripts/angular.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-3.1.0.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="products.js" type="text/javascript"></script>
+    <script src="Services/products-service.js" type="text/javascript"></script>
+    <script src="Services/gravatarfactory.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+</body>
+</html>

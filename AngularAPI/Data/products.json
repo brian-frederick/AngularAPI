@@ -1,0 +1,177 @@
+﻿[  
+   {  
+      "name":"dodecahedron",
+      "price":2.95,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... Dodecahedron is one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/dodecahedron-01-full.jpg",
+      "reviews":[  
+         {  
+            "stars":4,
+            "body":"worth dying for.",
+            "author":"Ebert"
+         },
+         {  
+            "stars":2,
+            "body":"Looks nothing like the drawing. I feel cheated",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"joe@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"rad skull",
+      "price":200.05,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/amethyst-02-thumb.jpg",
+      "reviews":[  
+         {  
+            "stars":5,
+            "body":"rad skull. mmmmm. A unique piece.",
+            "author":"gabe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"I would definitely put this in my living room",
+            "author":"obama@thewhitehouse.com"
+         },
+         {  
+            "stars":1,
+            "body":"this product is too rad. i cannot handle it.",
+            "author":"ripal@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"diamond",
+      "price":9.55,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/diamond.jpg",
+      "reviews":[  
+         {  
+            "stars":2,
+            "body":"seems too cheap to be a real diamond.",
+            "author":"joe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"at this price? i cannot resist.",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"riding_the_fence@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"color gem",
+      "price":18.05,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/color.jpg",
+      "reviews":[  
+         {  
+            "stars":2,
+            "body":"seems too cheap to be a real diamond.",
+            "author":"joe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"at these prices? i can\"t resist.",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"riding_the_fence@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"easter egg",
+      "price":3.05,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/easteregg.jpg",
+      "reviews":[  
+         {  
+            "stars":2,
+            "body":"seems too cheap to be a real diamond.",
+            "author":"joe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"at these prices? i can\"t resist.",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"riding_the_fence@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"tear",
+      "price":12.05,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/teardrop.jpg",
+      "reviews":[  
+         {  
+            "stars":2,
+            "body":"seems too cheap to be a real diamond.",
+            "author":"joe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"at these prices? i can\"t resist.",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"riding_the_fence@codingtemple.com"
+         }
+      ]
+   },
+   {  
+      "name":"emerald",
+      "price":4.83,
+      "description":"Some gems have hidden qualities beyond their lustre, beyond their shine... amethyst is not one of those gems",
+      "canPurchase":true,
+      "soldOut":false,
+      "image":"Content/emerald.jpg",
+      "reviews":[  
+         {  
+            "stars":2,
+            "body":"seems too cheap to be a real diamond.",
+            "author":"joe@codingtemple.com"
+         },
+         {  
+            "stars":5,
+            "body":"at these prices? i can't resist.",
+            "author":"batman"
+         },
+         {  
+            "stars":3,
+            "body":"is this conflict free?",
+            "author":"riding_the_fence@codingtemple.com"
+         }
+      ]
+   }
+]

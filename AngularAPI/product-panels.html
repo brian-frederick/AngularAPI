@@ -1,0 +1,73 @@
+﻿<!---<html ng-app="myApp">
+<body ng-controller="myController">-->
+
+<section>
+        <ul class="nav nav-pills">
+            <li ng-class="{active: isSelected(1)}">
+                <a style="padding:5px"
+                   href ng-click="selectTab(1)">Description</a>
+            </li>
+            <li ng-class="{active: isSelected(2)}">
+                <a style="padding:5px"
+                   href ng-click="selectTab(2)">Specifications</a>
+            </li>
+            <li ng-class="{active: isSelected(3)}">
+                <a style="padding:5px"
+                   href ng-click="selectTab(3)">Reviews</a>
+            </li>
+        </ul>
+  
+        <div class="panel" ng-show="isSelected(1)">
+            <h5>Description</h5>
+            <p>{{product.Description}}</p>
+        </div>
+        <div class="panel" ng-show="isSelected(2)">
+            <h5>Specifications</h5>
+            <blockquote>None yet</blockquote>
+        </div>
+        <div class="panel" ng-show="isSelected(3)">
+            <h5>Reviews</h5>
+            <blockquote ng-repeat="Review in product.Reviews">
+                <b>Stars: {{Review.Stars}}</b> <br />
+                {{Review.Body}} <br />
+                <div ng-init="avatar = gravatarUrl(Review.Author)">
+                    <img ng-src="{{avatar}}" />
+                </div>
+                <cite> by: {{Review.Author}}</cite>
+            </blockquote>
+
+            <!--form for review submission-->
+            <form class="form-group-lg" name="reviewForm"
+                  ng-controller="ReviewController"
+                  ng-submit="reviewForm.$valid && addReview(product)" novalidate>
+                <blockquote>
+                    <h4>preview of your review</h4>
+                    <b>Stars: {{Review.Stars}}</b> <br />
+                    {{Review.Body}} <br />
+                    <cite> by: {{Review.Author}}</cite>
+                </blockquote>
+                <div ng-class="{'has-error': reviewForm.rating.$invalid && reviewForm.rating.$dirty}">
+                    <select name="rating" ng-model="Review.Stars" required>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+                <div ng-class="{'has-error': reviewForm.comments.$invalid && reviewForm.comments.$dirty}">
+                    <textarea name="comments" ng-model="Review.Body" class="form-control"
+                              placeholder="comments" style="display:block" required></textarea>
+                </div>
+                <label>by:</label>
+                <input ng-model="Review.Author" placeholder="email address"
+                       class="form-control" type="email" required />
+                <div> reviewForm is {{reviewForm.$valid}}</div>
+                <input class="form-control btn-group-sm" style="background-color:gray"
+                       type="submit" value="Submit" />
+            </form>
+        </div>
+    
+    </section>
+    <!--</body>
+    </html>-->

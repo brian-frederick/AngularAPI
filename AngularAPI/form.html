@@ -1,0 +1,22 @@
+﻿<form class="form-group-lg" name="reviewForm"
+      ng-controller="ReviewController"
+      ng-submit="reviewForm.$valid && addReview(product)" novalidate>
+    <blockquote>
+        <h4>preview of your review</h4>
+        <b>Stars: {{review.stars}}</b> <br />
+        {{review.body}} <br />
+        <cite> by: {{review.author}}</cite>
+    </blockquote>
+    <select ng-model="review.stars" required>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+    </select>
+    <textarea ng-model="review.body" class="form-control" placeholder="comments" style="display:block" required></textarea>
+    <label>by:</label>
+    <input ng-model="review.author" placeholder="email address" class="form-control" type="email" required />
+    <div> reviewForm is {{reviewForm.$valid}}</div>
+    <input class="form-control btn-group-sm" style="background-color:gray" type="submit" value="Submit" />
+</form>
