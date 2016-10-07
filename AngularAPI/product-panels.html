@@ -1,6 +1,4 @@
-﻿<!---<html ng-app="myApp">
-<body ng-controller="myController">-->
-
+﻿
 <section>
         <ul class="nav nav-pills">
             <li ng-class="{active: isSelected(1)}">
@@ -38,8 +36,8 @@
 
             <!--form for review submission-->
             <form class="form-group-lg" name="reviewForm"
-                  ng-controller="ReviewController"
-                  ng-submit="reviewForm.$valid && addReview(product)" novalidate>
+                  ng-controller="ReviewController as reviewCtrl"
+                  ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
                 <blockquote>
                     <h4>preview of your review</h4>
                     <b>Stars: {{Review.Stars}}</b> <br />
@@ -47,7 +45,7 @@
                     <cite> by: {{Review.Author}}</cite>
                 </blockquote>
                 <div ng-class="{'has-error': reviewForm.rating.$invalid && reviewForm.rating.$dirty}">
-                    <select name="rating" ng-model="Review.Stars" required>
+                    <select name="rating" ng-model="reviewCtrl.Review.Stars" required>
                         <option value="1">1 Star</option>
                         <option value="2">2 Stars</option>
                         <option value="3">3 Stars</option>
@@ -56,11 +54,11 @@
                     </select>
                 </div>
                 <div ng-class="{'has-error': reviewForm.comments.$invalid && reviewForm.comments.$dirty}">
-                    <textarea name="comments" ng-model="Review.Body" class="form-control"
+                    <textarea name="comments" ng-model="reviewCtrl.Review.Body" class="form-control"
                               placeholder="comments" style="display:block" required></textarea>
                 </div>
                 <label>by:</label>
-                <input ng-model="Review.Author" placeholder="email address"
+                <input ng-model="reviewCtrl.Review.Author" placeholder="email address"
                        class="form-control" type="email" required />
                 <div> reviewForm is {{reviewForm.$valid}}</div>
                 <input class="form-control btn-group-sm" style="background-color:gray"
@@ -69,5 +67,4 @@
         </div>
     
     </section>
-    <!--</body>
-    </html>-->
+   

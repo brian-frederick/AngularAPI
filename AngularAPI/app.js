@@ -20,17 +20,17 @@ myApp.controller('myController', ['$http', '$scope', '$log', 'ProductsService', 
 
 }]);
 
+myApp.controller('ReviewController', ['$http', function ($http, $scope) {
+    this.Review = {};
 
-myApp.controller("ReviewController", function ($scope) {
-    $scope.review = {};
-    $scope.addReview = function (product) {
+    this.addReview = function (product) {
+        var data = this.Review;
+        data.ProductId = product.id;
+     
 
-        $http.post("api/reviews", product);
+        $http.post('/api/reviews', data);
 
-        if (!product.reviews) {
-            product.reviews = [];
-        }
-        product.reviews.push($scope.review);
-        $scope.review = {};
+        product.Reviews.push(this.Review)
+        this.Review = {};
     }
-});
+}]);
